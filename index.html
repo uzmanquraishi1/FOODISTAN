@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODISTAN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="FOODISTAN" />
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart</a>
+        <a href="#orders">Orders</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+      <div class="hero-content">
+        <h1>Delicious Food, <span>Delivered Fresh!</span></h1>
+        <p>Your Cravings, our destination.</p>
+        <p>Order your favourite food with just a few clicks.</p>
+        <a href="#menu" class="hero-btn">Explore Menu</a>
+      </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="section" id="menu">
+      <h2>Our Food Menu</h2>
+      <p class="section-subtitle">Choose your favourite food</p>
+
+      <div class="categories">
+        <button class="category-btn active" data-category="All">All</button>
+        <button class="category-btn" data-category="Burgers">Burgers</button>
+        <button class="category-btn" data-category="Pizza">Pizza</button>
+        <button class="category-btn" data-category="Snacks">Snacks</button>
+        <button class="category-btn" data-category="Noodles">Noodles</button>
+        <button class="category-btn" data-category="Sandwiches">
+          Sandwiches
+        </button>
+        <button class="category-btn" data-category="Combos">Combos</button>
+        <button class="category-btn" data-category="Beverages">
+          Beverages
+        </button>
+      </div>
+
+      <div class="food-container" id="food-container">
+        <!-- Food items will be displayed using JavaScript -->
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="section cart-section" id="cart">
+      <h2>🛒 Your Cart</h2>
+
+      <div id="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-summary">
+        <p>Subtotal: <span id="subtotal">₹0</span></p>
+        <p>Delivery Fee: <span id="delivery-fee">₹30</span></p>
+        <h3>Total: <span id="grand-total">₹0</span></h3>
+
+        <button id="place-order-btn" class="order-btn" disabled>
+          Place Order
+        </button>
+
+        <p id="order-status"></p>
+      </div>
+    </section>
+
+    <!-- Order History -->
+    <section class="section" id="orders">
+      <h2>📦 Order History</h2>
+
+      <div id="order-history">
+        <p class="empty-history">No orders placed yet.</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <h2>About FOODISTAN</h2>
+
+      <p>
+        <strong>FOODISTAN</strong> is your ultimate destination for comfort food
+        delivered fast. From gooey pizzas and juicy burgers to sizzling noodles
+        and loaded sandwiches, we bring your favorite cravings straight to your
+        door—hot, fresh, and packed with flavor.
+      </p>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer" id="contact">
+      <h2>Get In Touch</h2>
+      <p>Have questions or suggestions? We'd love to hear from you!</p>
+
+      <div class="contact-info">
+        <p>
+          📧 Email:
+          <a href="mailto:foodistan@gmail.com"> foodistan@gmail.com </a>
+        </p>
+
+        <p>
+          📞 Phone:
+          <a href="tel:+917620503102"> +91 7620503102 </a>
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 FOODISTAN. All Rights Reserved.</p>
+
+        <p class="made-by">
+          Developed with HTML, CSS & JavaScript by Uzman Quraishi
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
